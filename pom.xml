@@ -20,8 +20,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0</version>
         <configuration>
-			<systemPropertyVariables>
+          <systemPropertyVariables>
             <gridURL>http://localhost:4444</gridURL>
+            <appURL>http://demo.actitime.com</appURL>
           </systemPropertyVariables>
           <suiteXmlFiles>
             <suiteXmlFile>testng.xml</suiteXmlFile>
@@ -31,17 +32,20 @@
    </plugins>
   </build>
   <dependencies>
-	  <dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.10.0</version>
-		</dependency>
-	  <dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.14.3</version>
-		</dependency>
+    <dependency>
+  		<groupId>org.testng</groupId>
+  		<artifactId>testng</artifactId>
+  		<version>6.14.3</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.seleniumhq.selenium</groupId>
+  		<artifactId>selenium-java</artifactId>
+  		<version>4.10.0</version>
+  	</dependency>
+  	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>LATEST</version>
+	</dependency>
   </dependencies>
-  
-  
 </project>
